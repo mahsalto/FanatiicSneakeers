@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanatiic Sneakeers</title>
+    <link rel="stylesheet" href="css/styleShoes.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script
+      src="https://kit.fontawesome.com/69ed6b40bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .grid-item3{
+            height: 850px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <header>
+            <h1><a href="index.html" class="logo">Fanatiic Sneakeers</a></h1>
+            <hr> <br>
+            <div class="botoes">
+                <a href="index.html" class="btn">Home</a>
+                <a href="masc.html" class="btnAtivo">Masculino</a>
+                <a href="fem.html" class="btn">Feminino</a> 
+            </div>
+            <div class="login">
+                <a href="login.html" class="btn">Entrar</a>
+
+                <a href="carrinho.html" id="btn-carrinho" class="btn-carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            
+        </header>
+    </nav>
+
+    <div class="grid-container">
+
+        <div class="grid-item1">
+            <h1>Nike Precision 6</h1>
+        </div>
+
+        <div class="grid-item2">
+        <img src="img/NikeEsportivo2.jpg" alt="Nike Precision 6">
+        </div>
+
+        <div class="grid-item3">
+
+            <div class="title">
+               <strong>Nike Precision 6</strong> 
+               <span class="marca">Marca: Nike</span>
+            </div>
+
+        <br>
+
+    <div class="desc"><strong>Descrição:</strong><p>Para uma rotina de movimentos e treinos, você precisa unir estilo e conforto, esse tênis Nike é a pedida certa. O cabedal (parte superior do tênis) em malha respirável e sintético, oferece apoio e durabilidade. Já sua entressola em EVA e o solado emborrachado proporcionam resposta rápida de movimentos com mais leveza e maior estabilidade. E, para complementar, o logo da marca representa a qualidade Nike em todos os detalhes, para te surpreender em todos os momentos.</p></div>
+    
+    <div class="size">
+        <p><strong>Selecione o tamanho:</strong></p>
+        <div id="tamanhos"></div>
+    </div>
+
+    <br> <br>
+    
+    <div class="preco-anterior">R$ 450,99</div>
+    <div class="preco">
+        
+        R$ 319,99<span class="desconto"> Em até 6x de 53,33</span>
+    </div>
+            <div>
+                <button id="removeItemBtn" class="removeItemBtn">-</button>
+                <span id="itemCount" class="itemCount">1</span>
+                <button id="addItemBtn" class="addItemBtn">+</button>
+              </div>
+
+            <button id="addToCartBtn" class="addToCartBtn" onclick="adicionarAoCarrinho('Nike Precision 6', 319,99)">Adicionar ao Carrinho</button>
+            
+        </div>
+    </div>
+
+        
+    <footer>&copy; Equipe Fanatic</footer>
+    <script src="scriptShoes.js"></script>
+</body>
+</html>

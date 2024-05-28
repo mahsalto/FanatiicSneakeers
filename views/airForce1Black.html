@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanatiic Sneakeers</title>
+    <link rel="stylesheet" href="css/styleShoes.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script
+      src="https://kit.fontawesome.com/69ed6b40bc.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <nav>
+        <header>
+            <h1><a href="index.html" class="logo">Fanatiic Sneakeers</a></h1>
+            <hr> <br>
+            <div class="botoes">
+                <a href="index.html" class="btn">Home</a>
+                <a href="masc.html" class="btnAtivo">Masculino</a>
+                <a href="fem.html" class="btn">Feminino</a> 
+            </div>
+            <div class="login">
+                <a href="login.html" class="btn">Entrar</a>
+
+                <a href="carrinho.html" id="btn-carrinho" class="btn-carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            
+        </header>
+    </nav>
+
+    <div class="grid-container">
+
+        <div class="grid-item1">
+            <h1>Nike Air Force 1 '07 Black</h1>
+        </div>
+
+        <div class="grid-item2">
+        <img src="img/NikeCasualF3.jpg" alt="Nike Air Force 1 '07 Black">
+        </div>
+
+        <div class="grid-item3">
+
+            <div class="title">
+               <strong>Nike Air Force 1 '07 Black</strong> 
+               <span class="marca">Marca: Nike</span>
+            </div>
+
+        <br>
+
+    <div class="desc"><strong>Descrição:</strong><p>O visual furtivo apresenta uma parte superior de couro premium suave com um Swoosh correspondente e um cadeado de renda 'AF-1' prateado para elegância. O visual monocromático continua sob a forma de uma entressola combinando com Air encapsulado e uma sola preta.</p></div>
+    
+    <div class="size">
+        <p><strong>Selecione o tamanho:</strong></p>
+        <div id="tamanhos"></div>
+    </div>
+
+    <br> <br>
+    
+    <div class="preco-anterior">R$ 749,99</div>
+    <div class="preco">    
+        
+        R$ 649,99 <span class="desconto"> Em até 10x de 64,99</span>
+    </div>
+            <div>
+                <button id="removeItemBtn" class="removeItemBtn">-</button>
+                <span id="itemCount" class="itemCount">1</span>
+                <button id="addItemBtn" class="addItemBtn">+</button>
+              </div>
+
+            <button id="addToCartBtn" class="addToCartBtn" onclick="adicionarAoCarrinho('Nike Air Force 1 07 Black', 649,99)">Adicionar ao Carrinho </button>
+            
+        </div>
+    </div>
+    
+    
+    <footer>&copy; Equipe Fanatic</footer>
+    <script src="scriptShoes.js"></script>
+    <script src="NikeCasualF.js"></script>
+</body>
+</html>

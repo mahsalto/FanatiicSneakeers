@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Altera informações da "caixa" do carrossel */
+.carousel-container {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Faz a movimentação dos slides*/
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/*Altera tamanho que fica cada slide*/
+.carousel-item {
+  width: auto; 
+  min-width: 100%;
+  box-sizing: border-box;
+
+}
+
+/*Altera botão do carrosel*/
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/*Distanciamento dos botões*/
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}

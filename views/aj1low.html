@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanatiic Sneakeers</title>
+    <link rel="stylesheet" href="css/styleShoes.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script
+      src="https://kit.fontawesome.com/69ed6b40bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .desconto{
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <header>
+            <h1><a href="index.html" class="logo">Fanatiic Sneakeers</a></h1>
+            <hr> <br>
+            <div class="botoes">
+                <a href="index.html" class="btn">Home</a>
+                <a href="masc.html" class="btnAtivo">Masculino</a>
+                <a href="fem.html" class="btn">Feminino</a> 
+            </div>
+            <div class="login">
+                <a href="login.html" class="btn">Entrar</a>
+
+                <a href="carrinho.html" id="btn-carrinho" class="btn-carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            
+        </header>
+    </nav>
+
+    <div class="grid-container">
+
+        <div class="grid-item1">
+            <h1>Air Jordan 1 low </h1>
+        </div>
+
+        <div class="grid-item2">
+        <img src="img/NikeCasual2.jpg" alt="NIke Air Jordan 1 Low">
+        </div>
+
+        <div class="grid-item3">
+
+            <div class="title">
+               <strong>Air Jordan 1 low</strong> 
+               <span class="marca">Marca: Nike</span>
+            </div>
+
+        <br>
+
+    <div class="desc"><strong>Descrição:</strong><p>Inspirado no original lançado em 1985, o Air Jordan 1 Low oferece um visual limpo e clássico que é familiar, mas sempre atual. Com um design icônico que combina perfeitamente com qualquer ajuste, esses tênis garantem que você estará sempre no ponto.</p></div>
+    
+    <div class="size">
+        <p><strong>Selecione o tamanho:</strong></p>
+        <div id="tamanhos"></div>
+    </div>
+
+    <br> <br>
+    
+    <div class="preco-anterior">R$ 1.199,99</div>
+    <div class="preco">
+
+        R$ 1.099,99 <span class="desconto"> Em até 10x de 109,99</span>
+    </div>
+            <div>
+                <button id="removeItemBtn" class="removeItemBtn">-</button>
+                <span id="itemCount" class="itemCount">1</span>
+                <button id="addItemBtn" class="addItemBtn">+</button>
+              </div>
+
+            <button id="addToCartBtn" class="addToCartBtn" onclick="adicionarAoCarrinho('Nike Air Jordan 1 Low', 1099,99)">Adicionar ao Carrinho</button>
+            
+        </div>
+    </div>
+
+        
+    <footer>&copy; Equipe Fanatic</footer>
+    <script src="scriptShoes.js"></script>
+    <script src="NikeCasualF.js"></script>
+</body>
+</html>

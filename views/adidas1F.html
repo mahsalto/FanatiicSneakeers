@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanatic Sneakers</title>
+    <link rel="stylesheet" href="css/styleShoes.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script
+      src="https://kit.fontawesome.com/69ed6b40bc.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <nav>
+        <header>
+            <h1><a href="index.html" class="logo">Fanatic Sneakers</a></h1>
+            <hr> <br>
+            <div class="botoes">
+                <a href="index.html" class="btn">Home</a>
+                <a href="masc.html" class="btn">Masculino</a>
+                <a href="fem.html" class="btnAtivo">Feminino</a> 
+            </div>
+            <div class="login">
+                <a href="login.html" class="btn">Entrar</a>
+
+                <a href="carrinho.html" id="btn-carrinho" class="btn-carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            
+        </header>
+    </nav>
+
+    <div class="grid-container">
+
+        <div class="grid-item1">
+            <h1>ADIDAS SUPERSTAR XLG</h1>
+        </div>
+
+        <div class="grid-item2">
+        <img src="img/Adidas1F.jpg" alt="ADIDAS SUPERSTAR XLG">
+        </div>
+
+        <div class="grid-item3">
+
+            <div class="title">
+               <strong>ADIDAS SUPERSTAR XLG</strong> 
+               <span class="marca">Marca: Adidas</span>
+            </div>
+
+        <br>
+
+    <div class="desc"><strong>Descrição:</strong><p>Quando você achava que o tênis adidas Superstar não poderia ser mais ousado, este par valoriza o clássico tênis dos anos 70 para a moda moderna.</p></div>
+    
+    <div class="size">
+        <p><strong>Selecione o tamanho:</strong></p>
+        <div id="tamanhos"></div>
+    </div>
+
+    <br> <br>
+    
+    <div class="preco-anterior">R$ 599,99</div>
+    <div class="preco">    
+        
+        R$ 379,99 <span class="desconto"> Em até 10x de 37,99</span>
+    </div>
+            <div>
+                <button id="removeItemBtn" class="removeItemBtn">-</button>
+                <span id="itemCount" class="itemCount">1</span>
+                <button id="addItemBtn" class="addItemBtn">+</button>
+              </div>
+
+            <button id="addToCartBtn" class="addToCartBtn" onclick="adicionarAoCarrinho('Adidas Superstar XLG', 379.99 )">Adicionar ao Carrinho</button>
+            
+        </div>
+    </div>
+    
+    
+    <footer>&copy; Equipe Fanatic</footer>
+    <script src="scriptShoes.js"></script>
+    <script src="carrinho.js"></script>
+</body>
+</html>

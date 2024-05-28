@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: rgb(118, 41, 250);;
+    padding: 35px;
+    border-radius: 7px;
+}
+.logo{
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 42px;
+    color: black;
+}
+hr{
+    border: 1px solid black;
+}
+.btn{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.btn:hover{
+    background-color:  black;
+    color: white;
+    transition: 1s;
+}
+.botoes{
+    display: inline-flex;
+}
+.login{
+    display: inline-flex;
+    position: absolute;
+    left: 87%;
+}
+.btnAtivo{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header  '
+    'menu main '
+    'menu main ';
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item1{
+    grid-area: 1 / 1 / span 1 / span 4;
+}
+.grid-item2{
+    grid-area:2 / 1 / span 2 / span 3 ;
+}
+.grid-item3{
+    grid-area: 2 / 4 / span 1 / span 2;
+    width: 450px;
+    height: 700px;
+    text-align: center;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+img{
+    width: 70%;
+    height: auto;
+}
+.title{
+    font-size: 32px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.marca{
+    font-size: 20px;
+}
+.desc{
+    text-align: left;
+    font-size: 22px;
+}
+.desc > p{
+    font-size: 20px;
+}
+.preco{
+    font-weight: 500;
+    text-align: left;
+}
+.preco-anterior{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 16px;
+    position: relative;
+    right: 180px;
+}
+.desconto{
+    color: purple;
+    font-family: 'Lilita One', sans-serif;
+    text-decoration:underline;
+    position: relative;
+    left: 170px;
+}
+.size{
+    font-size: 22px;
+    text-align: left;
+}
+.tamanho {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.tamanho:hover{
+    border: 2px solid black;
+    transition: all 0.5s;
+}
+.tamanho.active {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+.removeItemBtn, .addItemBtn{
+    border: 1px solid rgb(102, 102, 102);
+    width: 40px;
+    border-radius: 50px;
+    padding: 3px 9px;
+    margin: 5px;
+    color: #757575;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    right: 170px;
+    top: 26px;
+}
+.itemCount{
+    position: relative;
+    right: 170px;
+    top: 28px;
+}
+.addToCartBtn{
+    background-color: #f0f0f0;
+    color: black;
+    width: 190px;
+    height: 60px;
+    font-size: 16px;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    left: 130px;
+    bottom: 20px;
+}
+.addToCartBtn:hover{
+    background-color: black;
+    color: white;
+    transition: all .5s;
+}
+a.btn-carrinho{
+    font-size: 30px;
+    color: black;
+    position: relative;
+    left: 10px;
+}
+
+.carrinho {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    display: none; /* Oculta o carrinho inicialmente */
+}
+
+.carrinho.show {
+    display: block; /* Mostra o carrinho quando a classe 'show' está presente */
+}
+
+
+footer{
+    padding: 20px;
+    background-color: rgb(69, 104, 199);
+    text-align: center;
+    font-weight: 600;
+}

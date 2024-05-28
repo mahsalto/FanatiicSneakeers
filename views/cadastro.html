@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/sign-up.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script
+      src="https://kit.fontawesome.com/69ed6b40bc.js"
+      crossorigin="anonymous"
+    ></script>
+
+</head>
+<body>
+    
+
+        <div class="main-signUp">
+            <div class="left-signUp">
+                <img src="img/comprador2.png" alt="Gastronomia" height="560px">
+            </div>
+            <div class="right-signUp">
+                
+                <div>
+                    <a href="login.html" class="btnBack" title="Voltar">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                
+        <div class="card-signUp">
+            
+                <form>
+            
+                    <div class="card">
+                        <h1>Dados Pessoais</h1>
+                        <div class="textfield">
+                            <label for="fname">Nome:</label>
+                            <input name="nome" type="text" placeholder="Nome"  required>
+                        </div>
+                        <div class="textfield">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf" name="cpf" pattern="\d{11}" title="Digite um CPF válido (apenas números)" maxlength="11" required placeholder="Digite seu CPF" required>
+                        </div>
+                        <div class="textfield">
+                            <label for="email">E-mail:</label>
+                            <input type="email" placeholder="E-mail" name="email" required>
+                        </div>
+                        <div class="textfield">
+                            <label for="tel">Telefone:</label>
+                                <input name="telefone" type="text" placeholder="(xx)91234-5678" required>
+                        </div>
+                        
+                        <div class="textfield">
+                            <label for="password">Senha:</label>
+                            <input name="senha" type="password" placeholder="Senha" required>
+                        </div>
+                        
+                        <a href="index.html" class="btnSg-up" button type="submit">Enviar</a>
+                        
+                    </div>
+                </form>
+            </div>
+</body>
+</html>

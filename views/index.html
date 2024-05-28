@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fanatiic Sneakeers</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleIndex.css" />
+    <link rel="stylesheet" href="css/carrossel.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/69ed6b40bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <header>
+        <h1><a href="index.html" class="logo">Fanatiic Sneakeers</a></h1>
+        <hr />
+        <br />
+        <div class="botoes">
+          <a href="index.html" class="btnAtivo">Home</a>
+          <a href="masc.html" class="btn">Masculino</a>
+          <a href="fem.html" class="btn">Feminino</a>
+        </div>
+        <div class="login">
+          <a href="login.html" class="btn">Entrar</a>
+        </div>
+      </header>
+    </nav>
+    <br />
+    <div class="carousel-container">
+      <div class="carousel" id="myCarousel">
+        <div class="carousel-item">
+          <img src="img/fun.jpg" alt="Imagem 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/inicio1.png" alt="Imagem 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/inicio2.png" alt="Imagem 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/inicio3.png" alt="Imagem 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/inicio4.png" alt="Imagem 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/inicio5.png" alt="Imagem 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/inicio6.png" alt="Imagem 3" />
+        </div>
+      </div>
+      <button class="carousel-btn prev" onclick="changeSlide(-1)">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button class="carousel-btn next" onclick="changeSlide(1)">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+    <div class="imghome">
+      <img src="img/home.png" alt="" id="imghome" />
+    </div>
+    <div class="footer">
+      <div class="payment-icons">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
+          alt="Visa"
+        />
+        <img
+          src="https://www.logo.wine/a/logo/Mastercard/Mastercard-Logo.wine.svg"
+          alt="Mastercard"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJb-peBXxPiGrWTCxxUcDnUiDrZdp3K1ukwxCcOW1lSQ&s"
+          alt="American Express"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHYN6Ml9cisu01sRmmSoZy5Afr3mBX4YMJ8jrZ_aAXhA&s"
+          alt="Hipercard"
+        />
+        <img
+          src="https://www.imagensempng.com.br/wp-content/uploads/2023/05/Logo-Elo-Png-1024x1024.png"
+          alt="Elo"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLfqIW413LIu7IrRxvrENAmYfE9excjkDOx9Hej8rwuA&s"
+          alt="PayPal"
+        />
+      </div>
+      <div class="contact">
+        <p>ENTRE EM CONTATO</p>
+        <a href="mailto:usepluie@gmail.com">fanatiic.sneakers@gmail.com</a>
+      </div>
+      <div class="disclaimer">
+        <p>
+          Copyright SNEAKERS. CNPJ: 00.000.000/0000-1. 2024. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </div>
+    <script src="carrossel.js"></script>
+    <script src="scriptNode.js"></script>
+  </body>
+</html>
